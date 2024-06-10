@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <CustomHttpAppender name="httpAppender" endpoint="http://your-log-endpoint" localLogFile="logs/local.log" append="true"/>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="httpAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
